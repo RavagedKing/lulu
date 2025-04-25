@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #e0b1ac;
+  transition: background-color 0.5s ease;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 30px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  z-index: 10;
+  background: transparent;
+}
+
+.logo {
+  grid-column: 1;
+  justify-self: start;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+nav {
+  grid-column: 2;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover {
+  color: #a37873; /* Un peu plus clair au survol */
+}
+
+.gallery {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artwork {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.artwork img {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.artwork img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.description {
+  font-size: 1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about {
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Contour doux */
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Contour doux */
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+.about img.portrait {
+  width: 200px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Animation Fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
