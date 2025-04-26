@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Ludmille Loup</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Ludmille Loup</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">Ludmille Loup</div>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="about.html">À propos</a>
-        </nav>
-    </header>
-    
-    <section class="gallery">
-        <div class="artwork fade-in">
-            <img src="images/oeuvre1.png" alt="Oeuvre 1">
-            <p class="description">Dualité, dessins/recherches inspirée du poème Vivre (pour les romantiques) de Zoé Lund, 2024, fusain sur papier gris et scotch, 21 x 29,7 cm</p>
-        </div>
-        <div class="artwork fade-in">
-            <img src="images/oeuvre2.png" alt="Oeuvre 2">
-            <p class="description">La graine de son âme, dessin de recherche pour mon prochain projet sur la rencontre entre
-                Psyché et Eros, 2025, 28, 5 x 29 cm</p>
-        </div>
-        <div class="artwork fade-in">
-            <img src="images/oeuvre3.png" alt="Oeuvre 3">
-            <p class="description">Naissance de l’amour (en cours), 2025, huile sur toile, 140 x 160 cm</p>
-        </div>
-        <div class="artwork fade-in">
-            <img src="images/oeuvre4.png" alt="Oeuvre 4">
-            <p class="description">Partager son esprit, dessin de recherche pour mon prochain projet sur la
-                rencontre entre Psyché et Eros, 2025, 21 x 29,7 cm</p>
-        </div>
-        <div class="artwork fade-in">
-            <img src="images/oeuvre5.png" alt="Oeuvre 5">
-            <p class="description">Pensée matérielle, 2024-2025, huile sur toile, 23,5 x 29,5 cm</p>
-        </div>
-        <div class="artwork fade-in">
-            <img src="images/oeuvre6.png" alt="Oeuvre 6">
-            <p class="description">Un destin doublé et ses dominos, 2025, huile sur toile, 29,7 x 42 cm</p>
-        </div>
-        <div class="artwork fade-in">
-            <img src="images/oeuvre7.png" alt="Oeuvre 7">
-            <p class="description">L’un dans l’autre, 2024, huile sur toile, 23,5 x 29,5 cm</p>
-        </div>
-    </section>
+  <div class="transition"></div>
 
-    <script src="script.js"></script>
+  <header>
+    <div class="logo">Ludmille Loup</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+    </nav>
+  </header>
+
+  <section class="gallery">
+    <div class="artwork fade-in">
+      <img src="images/oeuvre1.png" alt="Oeuvre 1" class="zoomable">
+      <p class="description"><strong class="title">Dualité</strong>, dessins/recherches inspirée du poème Vivre (pour les romantiques) de Zoé Lund, 2024, fusain sur papier gris et scotch, 21 x 29,7 cm</p>
+    </div>
+    <div class="artwork fade-in">
+      <img src="images/oeuvre2.png" alt="Oeuvre 2" class="zoomable">
+      <p class="description"><strong class="title">La graine de son âme</strong>, dessin de recherche pour mon prochain projet sur la rencontre entre Psyché et Eros, 2025, 28,5 x 29 cm</p>
+    </div>
+    <div class="artwork fade-in">
+      <img src="images/oeuvre3.png" alt="Oeuvre 3" class="zoomable">
+      <p class="description"><strong class="title">Naissance de l’amour</strong> (en cours), 2025, huile sur toile, 140 x 160 cm</p>
+    </div>
+    <div class="artwork fade-in">
+      <img src="images/oeuvre4.png" alt="Oeuvre 4" class="zoomable">
+      <p class="description"><strong class="title">Partager son esprit</strong>, dessin de recherche pour mon prochain projet sur la rencontre entre Psyché et Eros, 2025, 21 x 29,7 cm</p>
+    </div>
+    <div class="artwork fade-in">
+      <img src="images/oeuvre5.png" alt="Oeuvre 5" class="zoomable">
+      <p class="description"><strong class="title">Pensée matérielle</strong>, 2024-2025, huile sur toile, 23,5 x 29,5 cm</p>
+    </div>
+    <div class="artwork fade-in">
+      <img src="images/oeuvre6.png" alt="Oeuvre 6" class="zoomable">
+      <p class="description"><strong class="title">Un destin doublé et ses dominos</strong>, 2025, huile sur toile, 29,7 x 42 cm</p>
+    </div>
+    <div class="artwork fade-in">
+      <img src="images/oeuvre7.png" alt="Oeuvre 7" class="zoomable">
+      <p class="description"><strong class="title">L’un dans l’autre</strong>, 2024, huile sur toile, 23,5 x 29,5 cm</p>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="Image zoomée" id="lightbox-img">
+  </div>
+
+  <button id="scrollTopBtn" title="Retour en haut">↑</button>
+
+  <footer>
+    <p>Créations de Ludmille Loup © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
