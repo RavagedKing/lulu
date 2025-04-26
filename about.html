@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>À propos - Ludmille Loup</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>À propos - Ludmille Loup</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">Ludmille Loup</div>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="about.html">À propos</a>
-        </nav>
-    </header>
+  <div class="transition"></div>
 
-    <section class="about fade-in">
-        <h1>Ludzia Guillerin</h1>
-        <img src="images/lulu.png" alt="Portrait de Ludmille" class="portrait">
-        <p>
-            Ludmille est une artiste passionnée par la vie et la découverte du monde, très curieuse, elle exprime ses expériences de vie à travers différents médias qui lui permettent d'exprimer 
-            ce qu'elle a ressenti. Que ce soit des souvenirs ou la découverte des différentes cultures composant le monde, c'est une exploratrice qui aime partager avec le monde ces moments qui composent
-            sa vie, ses découvertes au sein de celle-ci .( elle est aussi grave mignonne haha )
-        </p>
-    </section>
+  <header>
+    <div class="logo">Ludmille Loup</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+    </nav>
+  </header>
 
-    <script src="script.js"></script>
+  <section class="about fade-in">
+    <h1 class="page-title">Ludzia Guillerin</h1>
+    <img src="images/lulu.png" alt="Portrait de Ludmille" class="portrait zoomable">
+    <p>
+      Ludmille est une artiste passionnée par la vie et la découverte du monde, très curieuse, elle exprime ses expériences de vie à travers différents médias qui lui permettent d'exprimer 
+      ce qu'elle a ressenti. Que ce soit des souvenirs ou la découverte des différentes cultures composant le monde, c'est une exploratrice qui aime partager avec le monde ces moments qui composent
+      sa vie, ses découvertes au sein de celle-ci. (Elle est aussi grave mignonne haha)
+    </p>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="Image zoomée" id="lightbox-img">
+  </div>
+
+  <button id="scrollTopBtn" title="Retour en haut">↑</button>
+
+  <footer>
+    <p>Créations de Ludmille Loup © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
